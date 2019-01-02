@@ -43,5 +43,13 @@
     echo $x * $y / $z;
 ?>
 
+<br>
+<br>
+
+    <form action="process.php" method="post">
+        <input type="text" name="name" value="Type your name">
+        <input type="submit" value="Submit">
+    </form>
+
 </body>
 </html>
