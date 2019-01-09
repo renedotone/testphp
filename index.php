@@ -179,21 +179,67 @@ else{
 <h4>For loop</h4>
 <br>
 <?php
-for($y = 2; $y <= 4; $y++){
-    echo "Het nummer is: $y <br>";
+for($x = 2; $x <= 6; $x++){
+    echo "Het nummer is: " . $x . "<br>"; 
 }
 
 ?>
 <br>
-
-<h4>For each loop</h4>
-<br>
 <?php
-
-
+for($y=0; $y <=4; $y++){
+    echo $y * 2 + 1 . "<br>";
+}
 ?>
 <br>
+<?php
+for($y=1; $y <=4; $y++){
+    echo $y * 2 . "<br>";
+}
+?>
 
+<h4>For each loop</h4>
+<?php
+$colors = array("red","blue","green","yellow");
+
+    foreach ($colors as $bert) {
+        echo "$bert <br>";
+    }
+?>
+<br>
+<?php
+$numbers = array(1,2,3,4,5);
+
+    foreach ($numbers as $value){
+        echo $value *2 . "<br>";
+    }
+?>
+<br>
+<?php
+    $id111 = array(
+        "stad" => "Amsterdam",
+        "straat" => "Rokin",
+        "nummer" => 23
+    );
+
+    $id112 = array(
+        "stad" => "Rotterdam",
+        "straat" => "Weena",
+        "nummer" => 45
+    );
+
+    $id113 = array(
+        "stad" => "Utrecht",
+        "straat" => "Neude",
+        "nummer" => 67
+    );
+
+    $accounts = [$id111, $id112, $id113];
+
+    foreach($accounts as $account){
+        echo "<li>" . $account["straat"] . "</li>";
+    }
+
+?>
 
 </body>
 </html>
